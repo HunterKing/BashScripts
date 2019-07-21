@@ -16,5 +16,5 @@ else
 	sudo cp $BACKUPFILE $SOURCEFILE
 	sudo systemctl enable lightdm
 	sudo systemctl enable display-manager
-	sudo reboot -h no
+	sudo reboot -h now
 fi

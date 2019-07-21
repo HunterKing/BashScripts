@@ -11,7 +11,7 @@ if [ ! -f "$BACKUPDIR/display-manager.service" ]; then
 	echo "no backup exists, quitting..."
 	break
 fi
-sudo cp ~/bin/backup/display-manager.service /etc/systemd/system/display-manager.service
+sudo cp $BACKUPDIR/display-manager.service /etc/systemd/system/display-manager.service
 echo "Re-Enabling Services"
 sudo systemctl enable lightdm
 sudo systemctl enable display-manager
